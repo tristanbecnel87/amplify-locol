@@ -58,7 +58,7 @@ const RoutesContainer = (props: {}) => {
         {/* <div>current path: {path}</div> */}
         <Routes>
           <Route path={"/login"} element={<Login/>} />
-            <Route path={"/student_profile"} element={<Login/>} />
+          <Route path={"/student_profile"} element={<Student_profile/>} />
         </Routes>
       </div>
     </Fragment>
