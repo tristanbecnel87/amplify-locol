@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 // import logo from './logo.svg';
 import { Navbar } from "./Navbar";
-//import  Homepage  from "./homepage/homepage";
+import  Homepage  from "./frontend/homepage/homepage";
 //import { Marketplace } from "./marketplace/marketplace";
 //import { Board } from "./board/board";
 //import { Community } from "./community/community";
@@ -57,6 +57,8 @@ const RoutesContainer = (props: {}) => {
 
         {/* <div>current path: {path}</div> */}
         <Routes>
+          <Route path={"/"} element={<Homepage />} />
+          <Route path={"/home"} element={<Homepage />} />
           <Route path={"/login"} element={<Login/>} />
           <Route path={"/student_profile"} element={<Student_profile/>} />
         </Routes>
