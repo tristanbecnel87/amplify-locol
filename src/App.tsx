@@ -7,9 +7,9 @@ import  Homepage  from "./frontend/homepage/homepage";
 //import { Board } from "./board/board";
 //import { Community } from "./community/community";
 import { Login } from "./frontend/login/login";
-//import { BusinesssignupRootRootRootRoot } from "./signup/services_interest/business_services";
-//import { BusinesssignupRootRootRoot1 } from "./signup/create/business_create";
-//import { BusinesssignupRootRoot1 } from "./signup/business_info/business_information";
+import { BusinesssignupRootRootRootRoot } from "./frontend/signup/services_interest/business_services";
+import { BusinesssignupRootRootRoot1 } from "./frontend/signup/create/business_create";
+import { BusinesssignupRootRoot1 } from "./frontend/signup/business_info/business_information";
 import { Signup_what_are_you } from "./frontend/signup/what_are_you/signup_what_are_you";
 import { Signup_type_of_account } from "./frontend/signup/what_type_of_account/signup_type_of_account";
 import  Signup_education  from "./frontend/signup/education/signup_education";
@@ -67,6 +67,10 @@ const RoutesContainer = (props: {}) => {
           <Route path={"/signup_about_you"} element={<Signup_about_you/>} />
           <Route path={"/signup_create"} element={<Signup_create/>} />
           <Route path={"/student_profile"} element={<Student_profile/>} />
+
+          <Route path={"/business_information"} element={<BusinesssignupRootRoot1/>} />
+          <Route path={"/business_services"} element={<BusinesssignupRootRootRootRoot/>} />
+          <Route path={"/business_create"} element={<BusinesssignupRootRootRoot1/>} />
         </Routes>
       </div>
     </Fragment>
