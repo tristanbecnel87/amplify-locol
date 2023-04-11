@@ -3,9 +3,9 @@ import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 // import logo from './logo.svg';
 import { Navbar } from "./Navbar";
 import  Homepage  from "./frontend/homepage/homepage";
-//import { Marketplace } from "./marketplace/marketplace";
-//import { Board } from "./board/board";
-//import { Community } from "./community/community";
+import { Marketplace } from "./frontend/marketplace/marketplace";
+import { Board } from "./frontend/board/board";
+import { Community } from "./frontend/community/community";
 import { Login } from "./frontend/login/login";
 import { BusinesssignupRootRootRootRoot } from "./frontend/signup/services_interest/business_services";
 import { BusinesssignupRootRootRoot1 } from "./frontend/signup/create/business_create";
@@ -16,8 +16,8 @@ import  Signup_education  from "./frontend/signup/education/signup_education";
 import  Signup_about_you  from "./frontend/signup/about_you/signup_about_you";
 import { Signup_create } from "./frontend/signup/create/signup_create";
 import { Student_profile } from "./frontend/student_profile/student_profile";
-//import { Calendar } from "./calendar/calendar";
-//import { Services } from "./services/services";
+import { Calendar } from "./frontend/calendar/calendar";
+import { Services } from "./frontend/services/services";
 
 import { Business_profile } from "./frontend/business_profile/business_profile";
 import styled from "styled-components";
@@ -61,6 +61,11 @@ const RoutesContainer = (props: {}) => {
           <Route path={"/"} element={<Homepage />} />
           <Route path={"/home"} element={<Homepage />} />
           <Route path={"/login"} element={<Login/>} />
+          <Route path={"/market"} element={<Marketplace />} />
+          <Route path={"/community"} element={<Community />} />
+          <Route path={"/calendar"} element={<Calendar/>} />
+          <Route path={"/services"} element={<Services/>} />
+          <Route path={"/board"} element={<Board />} />
           <Route path={"/signup_person"} element={<Signup_what_are_you/>} />
           <Route path={"/signup_account"} element={<Signup_type_of_account/>} />
           <Route path={"/signup_education"} element={<Signup_education/>} />
