@@ -1,0 +1,161 @@
+#studenteducationRootRootRoot {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+#studenteducationRootRootRoot #background {
+    /* background-color: #aeeaaa; */
+    width: auto;
+    /* overflow: hidden; */
+    /* height: 668px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 13.13% 27.5% 13.13% 27.43%;
+    /* background-size: cover; */
+    background: url("https://file.rendit.io/n/4eqxKUac0wAhTiG8QL6c.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#studenteducationRootRootRoot #background #panel {
+    /* height: 487px; */
+
+    height: auto;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 6.16% 7.74% 6.16% 7.9%;
+    padding-bottom: 15%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#ip2 {
+    border-radius: 25px;
+    border: 2px solid #000;
+    padding: 20px; 
+    width: 400px;
+    /* width: 200px; */
+    height: 15px;  
+    left: 10%;  
+}
+.group {
+    width: 100.09%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px 0px 4.75% 0px;
+    padding: 1.87% 0px 1.48% 0px;
+}
+#panel text1 {
+    width: 24.47%;
+    height: 32px;
+    margin: 0px 0px 0% 0%;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Montserrat;
+    line-height: 31.725001335144043px;
+    white-space: nowrap;
+    position: relative;
+    color: #262626;
+    padding-left: 20%;
+
+  /*left: 64.8px;
+  top: 0px;
+  text-align: center;
+  white-space: nowrap; */
+}
+.arrows {
+    width: 100.09%;
+    height: 13.6px;
+    position: relative;
+}
+#panel text2 {
+    padding-top: 5%;
+    width: 44.57%;
+    height: 18px;
+    margin: 0px 0px 2.37% 11.83%;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Montserrat;
+    white-space: nowrap;
+}
+#panel text3 {
+    padding-top: 5%;
+    width: 28.68%;
+    height: 18px;
+    margin: 0px 0px 2.37% 11.83%;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Montserrat;
+    white-space: nowrap;
+}
+#panel text4 {
+    padding-top: 5%;
+    width: 37.08%;
+    height: 18px;
+    margin: 0px 0px 2.37% 11.83%;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Montserrat;
+    white-space: nowrap;
+}
+.flexColumn2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: center;
+    align-items: flex-start;
+    margin: 0px 0px 3.75% 0px;
+    padding: 2.37% 48.58% 2.28% 5.11%;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    box-shadow: 0px 5px 25px 0px #02375f;
+}
+#panel text5 {
+    width: 100%;
+    height: 13px;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Montserrat;
+    white-space: nowrap;
+}
+#panel text6 {
+    padding-top: 5%;
+    width: 34.16%;
+    height: 18px;
+    margin: 0px 0px 2.37% 11.83%;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Montserrat;
+    white-space: nowrap;
+}
+.flexColumn3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: center;
+    align-items: flex-start;
+    padding: 2.37% 47.67% 2.28% 5.11%;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    box-shadow: 0px 5px 25px 0px #02375f;
+}
+#panel text7 {
+    width: 100%;
+    height: 13px;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Montserrat;
+    white-space: nowrap;
+}

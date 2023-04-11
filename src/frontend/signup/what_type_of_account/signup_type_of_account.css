@@ -1,0 +1,204 @@
+#studentsignupRootRootRoot {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+#studentsignupRootRootRoot #background {
+    height: 668px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 13.13% 27.5% 13.13% 27.43%;
+    background-size: cover;
+    background-image: url("https://file.rendit.io/n/WEXEW8nMUubKOhiJCqi4.svg");
+}
+#studentsignupRootRootRoot #background #panel {
+    /* height: 279px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 4.93% 0px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: auto; */
+
+
+    height: 279px;
+    height: auto;
+    position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 14px;
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 0.75);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+margin:auto;
+width:550px;
+padding-bottom: 70px;
+}
+#studentsignupRootRootRoot #background #panel text1_type {
+    width: 100%;
+    height: 44px;
+    align-self: flex-start;
+    margin: 0px 0px 5.39% 0px;
+    color: #ca8342;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: Montserrat;
+    line-height: 44.41500186920166px;
+    text-align: center;
+}
+
+#studentsignupRootRootRoot #background #panel #button{
+    /* width:100px;
+    height:100px;
+    border-radius: 100%;
+    background-color: red; */
+    width:280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 17.72% 3.08% 0px;
+    margin-left: 45px;
+    /* margin-right: 20px; */
+    padding: 1.7% 51.46% 1.76% 4.31%;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    box-shadow: 0px 5px 25px 0px #02375f;
+    margin-bottom: 20px;
+}
+#studentsignupRootRootRoot #background #panel text2_type {
+    width: 17.57%;
+    height: 18px;
+    align-self: flex-start;
+    margin: 0px 0px 2% 17.87%;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Montserrat;
+    white-space: nowrap;
+    margin-left: 45px;
+}
+.flexColumn {
+    width: 64.1%;
+    height: 38.5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px 17.72% 3.08% 0px;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    box-shadow: 0px 5px 25px 0px #02375f;
+}
+.studentAccount {
+    width: 26.56%;
+    height: 16px;
+    left: 28px;
+    top: 11.1px;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+.dropshadow {
+    width: 100%;
+    height: 38.5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    box-shadow: 0px 5px 25px 0px #02375f;
+}
+
+
+#studentsignupRootRootRoot #background #panel text3_type {
+    width: 100%;
+    height: 16px;
+    color: #ca8342;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Montserrat;
+    white-space: nowrap;
+}
+.flexColumn2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px 17.72% 5.41% 0px;
+    padding: 1.69% 0px 1.77% 4.31%;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    box-shadow: 0px 5px 25px 0px #02375f;
+}
+#studentsignupRootRootRoot #background #panel text4_type {
+    width: 100%;
+    height: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: black;
+}
+#studentsignupRootRootRoot #background #panel text5_type {
+    width: 34.67%;
+    height: 13px;
+    margin: 0px 31.59% 0px 0px;
+    color: #9e9e9e;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Montserrat;
+    white-space: nowrap;
+    margin-left: 160px;
+    margin-top: 15px;
+    /* text-align: center; */
+/* 
+    width: 34.67%;
+    height: 13px;
+    margin: 0px 31.59% 0px 0px;
+    color: #9e9e9e;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Montserrat;
+    white-space: nowrap; */
+}
+#studentsignupRootRootRoot #background #panel text6_type {
+    display: contents;
+    color: #38518d;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+#studentsignupRootRootRoot #background #panel text7_type {
+    display: contents;
+    color: #ca8342;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Montserrat;
+    text-decoration-line: underline;
+}
+#studentsignupRootRootRoot #background #panel text8_type {
+    display: contents;
+    color: #9e9e9e;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+

@@ -7,17 +7,18 @@ import  Homepage  from "./frontend/homepage/homepage";
 //import { Board } from "./board/board";
 //import { Community } from "./community/community";
 import { Login } from "./frontend/login/login";
-//import { Signup_what_are_you } from "./signup/what_are_you/signup_what_are_you";
 //import { BusinesssignupRootRootRootRoot } from "./signup/services_interest/business_services";
 //import { BusinesssignupRootRootRoot1 } from "./signup/create/business_create";
 //import { BusinesssignupRootRoot1 } from "./signup/business_info/business_information";
-//import { Signup_type_of_account } from "./signup/what_type_of_account/signup_type_of_account";
-//import  Signup_education  from "./signup/education/signup_education";
-//import  Signup_about_you  from "./signup/about_you/signup_about_you";
-//import { Signup_create } from "./signup/create/signup_create";
+import { Signup_what_are_you } from "./frontend/signup/what_are_you/signup_what_are_you";
+import { Signup_type_of_account } from "./frontend/signup/what_type_of_account/signup_type_of_account";
+import  Signup_education  from "./frontend/signup/education/signup_education";
+import  Signup_about_you  from "./frontend/signup/about_you/signup_about_you";
+import { Signup_create } from "./frontend/signup/create/signup_create";
+import { Student_profile } from "./frontend/student_profile/student_profile";
 //import { Calendar } from "./calendar/calendar";
 //import { Services } from "./services/services";
-import { Student_profile } from "./frontend/student_profile/student_profile";
+
 //import { Business_profile } from "./business_profile/business_profile";
 import styled from "styled-components";
 
@@ -60,6 +61,11 @@ const RoutesContainer = (props: {}) => {
           <Route path={"/"} element={<Homepage />} />
           <Route path={"/home"} element={<Homepage />} />
           <Route path={"/login"} element={<Login/>} />
+          <Route path={"/signup_person"} element={<Signup_what_are_you/>} />
+          <Route path={"/signup_account"} element={<Signup_type_of_account/>} />
+          <Route path={"/signup_education"} element={<Signup_education/>} />
+          <Route path={"/signup_about_you"} element={<Signup_about_you/>} />
+          <Route path={"/signup_create"} element={<Signup_create/>} />
           <Route path={"/student_profile"} element={<Student_profile/>} />
         </Routes>
       </div>
