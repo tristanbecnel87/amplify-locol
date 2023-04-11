@@ -17,7 +17,7 @@ import { Login } from "./frontend/login/login";
 //import { Signup_create } from "./signup/create/signup_create";
 //import { Calendar } from "./calendar/calendar";
 //import { Services } from "./services/services";
-//import { Student_profile } from "./student_profile/student_profile";
+import { Student_profile } from "./frontend/student_profile/student_profile";
 //import { Business_profile } from "./business_profile/business_profile";
 import styled from "styled-components";
 
@@ -43,7 +43,7 @@ const RoutesContainer = (props: {}) => {
     // ["Create", "/signup_create"],
     // ["Calendar", "/calendar"],
     // ["Services", "/services"],
-    // ["StudentProfile", "/student_profile"],
+     ["StudentProfile", "/student_profile"],
     // ["BusinessProfile", "/business_profile"]
   ];
 
@@ -58,6 +58,7 @@ const RoutesContainer = (props: {}) => {
         {/* <div>current path: {path}</div> */}
         <Routes>
           <Route path={"/login"} element={<Login/>} />
+            <Route path={"/student_profile"} element={<Login/>} />
         </Routes>
       </div>
     </Fragment>
