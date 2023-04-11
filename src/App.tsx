@@ -19,7 +19,7 @@ import { Student_profile } from "./frontend/student_profile/student_profile";
 //import { Calendar } from "./calendar/calendar";
 //import { Services } from "./services/services";
 
-//import { Business_profile } from "./business_profile/business_profile";
+import { Business_profile } from "./frontend/business_profile/business_profile";
 import styled from "styled-components";
 
 
@@ -67,7 +67,7 @@ const RoutesContainer = (props: {}) => {
           <Route path={"/signup_about_you"} element={<Signup_about_you/>} />
           <Route path={"/signup_create"} element={<Signup_create/>} />
           <Route path={"/student_profile"} element={<Student_profile/>} />
-
+          <Route path={"/business_profile"} element={<Business_profile/>} />
           <Route path={"/business_information"} element={<BusinesssignupRootRoot1/>} />
           <Route path={"/business_services"} element={<BusinesssignupRootRootRootRoot/>} />
           <Route path={"/business_create"} element={<BusinesssignupRootRootRoot1/>} />
