@@ -103,8 +103,9 @@ function App({ signOut }: { signOut: () => void }) {
   return (
     <View className="App">
       <Card>
-
-        <Heading level={1}>We now have Auth!</Heading>
+        <BrowserRouter>
+            <RoutesContainer/>
+        </BrowserRouter>
       </Card>
       <Button onClick={signOut}>Sign Out</Button>
     </View>
