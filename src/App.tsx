@@ -1,6 +1,5 @@
 import React, {Fragment} from "react";
 import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
-// import logo from './logo.svg';
 import { Navbar } from "./Navbar";
 import  Homepage  from "./frontend/homepage/homepage";
 import { Marketplace } from "./frontend/marketplace/marketplace";
@@ -18,10 +17,18 @@ import { Signup_create } from "./frontend/signup/create/signup_create";
 import { Student_profile } from "./frontend/student_profile/student_profile";
 import { Calendar } from "./frontend/calendar/calendar";
 import { Services } from "./frontend/services/services";
-
+//import squadLoco from "./frontend/assets/images/squadLoco.png";
 import { Business_profile } from "./frontend/business_profile/business_profile";
 import styled from "styled-components";
-
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react";
 
 const RoutesContainer = (props: {}) => {
     // tuple of text displayed on the button and the link it leads to
@@ -81,15 +88,27 @@ const RoutesContainer = (props: {}) => {
     </Fragment>
   );
 };
+//function App() {
+//    return (
+//        <BrowserRouter>
+//            <RoutesContainer/>
+//        </BrowserRouter>
+//    );
+//
+//}
 
-function App() {
-    return (
-        <BrowserRouter>
-            <RoutesContainer/>
-        </BrowserRouter>
-    );
+//export default App;
+ //<Image src={squadLoco} className="App-logo" alt="Squad Loco" />
+function App({ signOut }: { signOut: () => void }) {
+  return (
+    <View className="App">
+      <Card>
 
+        <Heading level={1}>We now have Auth!</Heading>
+      </Card>
+      <Button onClick={signOut}>Sign Out</Button>
+    </View>
+  );
 }
 
-
-export default App;
+export default withAuthenticator(App);
