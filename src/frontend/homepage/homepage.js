@@ -6,7 +6,7 @@ import { Navigate, redirect } from "react-router-dom";
 import { render } from "@testing-library/react";
 
 // export const Homepage = ({}) => {
-  function homepage() {
+ export function homepage() {
     return (
       <div id = "HomepgSTYLEDRootRoot">
         <div className = "Group36">

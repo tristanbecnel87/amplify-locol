@@ -21,6 +21,9 @@ import { Services } from "./frontend/services/services";
 import { Business_profile } from "./frontend/business_profile/business_profile";
 import styled from "styled-components";
 import "@aws-amplify/ui-react/styles.css";
+import { Protected } from './Protected';
+import { RequireAuth } from './RequireAuth';
+import { ProtectedSecond } from './ProtectSecond';
 import {
   withAuthenticator,
   Button,
@@ -29,7 +32,13 @@ import {
   View,
   Card,
 } from "@aws-amplify/ui-react";
+import { Amplify } from 'aws-amplify';
 
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
 const RoutesContainer = (props: {}) => {
     // tuple of text displayed on the button and the link it leads to
     const links: [string, string][] = [
@@ -83,6 +92,10 @@ const RoutesContainer = (props: {}) => {
           <Route path={"/business_information"} element={<BusinesssignupRootRoot1/>} />
           <Route path={"/business_services"} element={<BusinesssignupRootRootRootRoot/>} />
           <Route path={"/business_create"} element={<BusinesssignupRootRootRoot1/>} />
+          <Route path={"/protected"} element={<Protected/>} />
+          <Route path={"/protectedsec"} element={<ProtectedSecond/>} />
+
+
         </Routes>
       </div>
     </Fragment>
@@ -99,17 +112,158 @@ const RoutesContainer = (props: {}) => {
 
 //export default App;
  //<Image src={squadLoco} className="App-logo" alt="Squad Loco" />
-function App({ signOut }: { signOut: () => void }) {
+// function App({ signOut }: { signOut: () => void }) {
+//   return (
+//
+//     <View className="App">
+//       <Card>
+//         <BrowserRouter>
+//             <RoutesContainer/>
+//         </BrowserRouter>
+//       </Card>
+//       <Button onClick={signOut}>Sign Out</Button>
+//     </View>
+//   );
+//}
+
+ const formFields = {
+    signUp: {
+      email: {
+        order:1
+      },
+      password: {
+        order: 2
+      },
+      confirm_password: {
+        order: 3
+      },
+      'custom: Business': {
+          key:'Business',
+          type:'string',
+          required:true,
+          label:'Business',
+          placeholder: 'Enter your Business Name',
+          order: 4
+      },
+        'custom: university': {
+          key:'university',
+          type:'string',
+          required:true,
+          label:'What university do you attend? ',
+          placeholder: 'Type Here',
+          order: 5
+      },
+         'custom: study': {
+          key:'study',
+          type:'string',
+          required:true,
+          label:'What do you study? ',
+          placeholder: 'Type Here',
+          order: 6
+      },
+         'custom: classification': {
+          key:'classification',
+          type:'integer',
+          required:true,
+          label:'What is your classification? ',
+          placeholder: 'Type Here',
+          order: 7
+      },
+          'custom: graduate': {
+          key:'graduate',
+          type:'integer',
+          required:true,
+          label:'When do you graduate? ',
+          placeholder: 'Type Here',
+          order: 8
+      },
+          'custom: skills': {
+          key:'skills',
+          type:'string',
+          required:true,
+          label:'List your skills',
+          placeholder: 'Proficient in C++, Graphic Design, Web Analytics, Etc.',
+          order: 9
+      },
+
+
+
+    },
+  }
+  const signUpConfig = {
+  header: 'My Customized Sign Up',
+  hideAllDefaults: true,
+  defaultCountryCode: '1',
+  signUpFields: [
+    {
+      label: 'My user name',
+      key: 'username',
+      required: true,
+      displayOrder: 1,
+      type: 'string'
+    },
+    {
+      label: 'Password',
+      key: 'password',
+      required: true,
+      displayOrder: 2,
+      type: 'password'
+    },
+    {
+      label: 'PhoneNumber',
+      key: 'phone_number',
+      required: true,
+      displayOrder: 3,
+      type: 'string'
+    },
+    {
+      label: 'Email',
+      key: 'email',
+      required: true,
+      displayOrder: 4,
+      type: 'string'
+    }
+  ]
+};
+
+//formFields={formFields}
+function MyRoutes() {
   return (
-    <View className="App">
-      <Card>
-        <BrowserRouter>
-            <RoutesContainer/>
-        </BrowserRouter>
-      </Card>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
+    <BrowserRouter>
+        <RoutesContainer></RoutesContainer>
+    </BrowserRouter>
+  );
+}
+      // <Routes>
+      //   <Route path="/" element={<Homepage />}>
+      //     <Route path={"/home"} element={<Homepage />} />
+      //     <Route path={"/login"} element={<Login/>} />
+      //     <Route path={"/market"} element={<Marketplace />} />
+      //     <Route
+      //       path="/protected"
+      //       element={
+      //         <RequireAuth>
+      //           <Protected />
+      //         </RequireAuth>
+      //       }
+      //     />
+      //     <Route
+      //       path="/protected2"
+      //       element={
+      //         <RequireAuth>
+      //           <ProtectedSecond />
+      //         </RequireAuth>
+      //       }
+      //     />
+      //     <Route path="/login" element={<Login />} />
+      //   </Route>
+      // </Routes>
+function App() {
+  return (
+    <Authenticator formFields={formFields} >
+      <MyRoutes />
+    </Authenticator>
   );
 }
 
-export default withAuthenticator(App);
+export default App;
