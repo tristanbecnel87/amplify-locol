@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { useEffect, useState } from 'react';
+import { Auth, API, graphqlOperation } from 'aws-amplify';
+
 
 export const Student_profile = ({}) => {
     const Text3Function = (e, name) => {

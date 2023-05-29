@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 
 import {Authenticator, useAuthenticator, View} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
@@ -82,12 +82,14 @@ import { Auth } from 'aws-amplify';
   }
 
 const UserProfile = () => {
+     const [user, setUser] = useState(null);
   useEffect(() => {
     const fetchUserAttributes = async () => {
       try {
-        const user = await Auth.currentAuthenticatedUser();
-        const attributes = user.attributes;
+        const currentUser = await Auth.currentAuthenticatedUser();
+        const attributes = currentUser.attributes;
         console.log("User attributes:", attributes);
+        setUser(currentUser);
       } catch (error) {
         console.error("Failed to fetch user attributes.", error);
       }
@@ -98,7 +100,13 @@ const UserProfile = () => {
 
   return (
     <div>
-      {/* Render user profile */}
+      <h1>User Profile</h1>
+      {user && (
+        <>
+          <p>Email: {user.attributes.email}</p>
+          {/* Render other user information */}
+        </>
+      )}
     </div>
   );
 };
