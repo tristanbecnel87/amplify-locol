@@ -81,7 +81,7 @@ import { Auth } from 'aws-amplify';
     },
   }
 
-const UserProfile = () => {
+export const UserProfile = () => {
      const [user, setUser] = useState(null);
   useEffect(() => {
     const fetchUserAttributes = async () => {

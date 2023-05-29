@@ -2,8 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { useEffect, useState } from 'react';
 import { Auth, API, graphqlOperation } from 'aws-amplify';
+import {UserProfile} from "../login/login";
 
 
+
+export const Student_profile = ({}) => {
+    return (<UserProfile/>);
+}
+/*
 export const Student_profile = ({}) => {
     const Text3Function = (e, name) => {
         alert(`${name} was clicked`);
@@ -345,7 +351,7 @@ export const Student_profile = ({}) => {
         </StudentprofileSTYLEDRootRootRoot>
     );
 };
-
+*/
 const Group114 = styled.div`
   width: 502px;
   display: flex;
